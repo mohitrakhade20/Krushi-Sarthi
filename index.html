@@ -959,7 +959,8 @@ Krushi Sarthi is a bunch of professionals coming from various backgrounds workin
 
 <!-- contat us niket new-->
 <!-- contact -->
-<section class="contact py-5">
+
+<section id="contact_us" class="contact py-5">
 	<div class="container py-sm-3">
 		<h3 class="heading mb-sm-5 mb-4 text-center"> Contact Us</h3>
 		<div class="row map-pos">
@@ -1002,17 +1003,60 @@ Krushi Sarthi is a bunch of professionals coming from various backgrounds workin
 					</div>
 				</div>
 			</div>
-		</div>
-		<form action="#" method="post">
+    </div>
+    <form name="sentMessage" id="contactForm">
+		  <!-- <form action="#" method="post"> -->
 			<div class="row">
 				<div class="col-md-6 contact-left">
-					<input type="text" name="Name" placeholder="Your Name" required="">
-					<input type="email" name="Email" placeholder="Email" required="">
-					<input type="text" name="Mobile Number" placeholder="Mobile Number" required="">
-				</div>
+
+          <div class="form-group">
+            <input type="text" 
+              class="form-control"
+              name='name'
+              id="name"
+              name="Name" placeholder="Your Name" required=""
+              />
+          </div>
+          
+          <div class="form-group">
+          <input type="email"
+          class="form-control"
+          name='email'
+          id="email"
+           name="Email" placeholder="Email" required=""
+           />
+          </div>
+
+          
+          <div class="form-group">
+          <input type="text" 
+          name="Mobile Number" 
+          class="form-control"
+          name='phone'
+          id="phone"
+          
+          placeholder="Mobile Number" required=""
+          />
+        
+            </div>
+        
+        </div>
 				<div class="col-md-6 contact-right mt-md-0 mt-4">
-					<textarea name="Message" placeholder="Message" required=""></textarea>
-					<button class="btn">Submit</button>
+          
+          <div class="form-group">
+          <textarea 
+          name="Message"
+          class="form-control"
+          name='message'
+          id="message"
+          placeholder="Message" required="">
+
+          
+          </textarea>
+          </div>
+          
+          
+          <button type="submit-form" class="btn">Submit</button>
 				</div>
 			</div>
     </form>
@@ -1146,10 +1190,10 @@ Krushi Sarthi is a bunch of professionals coming from various backgrounds workin
           Company  
         </div>  
         <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Profile</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact_us">Contact</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#faq">FAQs</a></li>
         </ul>
      </div>
      <div class="col_2">
@@ -1205,6 +1249,10 @@ Krushi Sarthi is a bunch of professionals coming from various backgrounds workin
 <!-- // new footer -->
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- firebase-->
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script src="js/feedback_js.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
